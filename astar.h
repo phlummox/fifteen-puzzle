@@ -104,6 +104,10 @@ using hash = std::function<size_t(const T&)>;
 //    used to generate next-states;
 //   heur: heuristic<T> : a function of type (const T&) -> size_t,
 //     which gives an estimate of distance to the goal.
+//   eq: eq<T>: a function of type (const T&) -> (const T&) -> bool,
+//     to test when current state == goal state.
+//   hash: hash<T>: a function of type (const T&) -> size_t, which
+//     produces a hash from a state/position. Used for storing in a hash-set.
 //
 //   (optional) safety_lim, max no of states/positions to visit.
 //
