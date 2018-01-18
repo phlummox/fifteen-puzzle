@@ -32,7 +32,9 @@ class node;
 //    Unhelpful names, ikr, but they seem standard
 // for a-star implementations.
 
-// we use a simple model where cost is always 1.
+// we use a simple model where incremental cost 
+// (i.e. cost of a single move to a neighbouring state)
+// is always 1.
 template<typename T>
 class node {
 public:
